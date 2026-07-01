@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My API</title>
+    <script
+      src="https://www.w3.org/Tools/respec/respec-w3c"
+      class="remove"
+      async
+    ></script>
+    <script class="remove">
+      var respecConfig = {
+        specStatus: "ED",
+        editors: [{ name: "Your Name", url: "https://your-site.example/" }],
+        github: "some-org/mySpec",
+        shortName: "my-api",
+        xref: "web-platform",
+        group: "my-working-group",
+      };
+    </script>
+  </head>
+  <body>
+    <section id="abstract">
+      <p>This spec defines the My API.</p>
+    </section>
+    <section id="sotd"></section>
+    <section class="informative">
+      <h2>Introduction</h2>
+      <p>Some introductory text.</p>
+      <aside class="note" title="A note">
+        <p>Notes look like this.</p>
+      </aside>
+    </section>
+    <section data-dfn-for="Foo">
+      <h2>The <code>Foo</code> interface</h2>
+      <pre class="idl">
+        [Exposed=Window]
+        interface Foo {
+          attribute DOMString bar;
+          undefined doTheFoo();
+        };
+      </pre>
+      <p>The <dfn>Foo</dfn> interface represents a {{Foo}}.</p>
+      <p>The <dfn>doTheFoo()</dfn> method does the foo. Call it via {{Foo/doTheFoo()}}.</p>
+      <ol class="algorithm">
+        <li>Let |result:DOMString| be a new string.</li>
+        <li>Return |result|.</li>
+      </ol>
+    </section>
+    <section id="conformance"></section>
+  </body>
+</html>
